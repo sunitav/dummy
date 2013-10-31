@@ -1,9 +1,9 @@
 Given(/^I am logged in$/) do
-  #steps %Q{
-  #  Given I on  the Sign In Page
-  #  When I login as default user
-  #  I should be logged in
-  #}
+  steps %Q{
+    Given I am on the Sign In Page
+    When I login as default user
+    I should be logged in
+  }
   pending
 end
 
