@@ -1,3 +1,5 @@
+require 'calabash-cucumber/operations'
+
 class HomePage
 
   def select_my_favorite_deals

@@ -4,5 +4,6 @@ Feature: Mark Deal
 
   Scenario:
     Given I am logged in
-    When I select a "Dole Fruit Snack Apple 90g" deal from the "Bakery & Desserts" category
+    When I mark a "Dole Fruit Snack Apple 90g" deal from the "Bakery & Desserts" category
     Then The deal is added to My Favourite Deals
+
