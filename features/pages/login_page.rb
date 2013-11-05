@@ -1,15 +1,17 @@
-require 'calabash-cucumber/operations'
-require 'calabash-cucumber/core'
+#require 'calabash-cucumber/operations'
+#require 'calabash-cucumber/core'
+require 'calabash-android/abase'
 
-class LoginPage
-  include Calabash::Cucumber::Operations
+class LoginPage < Calabash::ABase
 
-  def login(user, password)
-    touch "CordovaWebView css:'input#email'"
-    keyboard_enter_text user
-    touch "CordovaWebView css:'input#password'"
-    keyboard_enter_text password
+  def trait
+    "CordovaWebView css:'button#signinButton'"
+  end
+
+  def login(user)
+    performAction("set_text", "css", 'input#email', user[:email])
+    performAction("set_text", "css", 'input#password', user[:password])
     touch "CordovaWebView css:'button#signinButton>span'"
-    #wait for login to happen
+    wait_for_animation
   end
 end

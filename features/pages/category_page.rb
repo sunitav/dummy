@@ -1,10 +1,12 @@
-require 'calabash-cucumber/operations'
-require 'calabash-cucumber/core'
+require 'calabash-android/abase'
 
-class CategoryPage
-  include Calabash::Cucumber::Operations
+class CategoryPage < Calabash::ABase
 
-    def select_deal(deal_name)
+  def trait
+
+  end
+
+  def select_deal(deal_name)
       touch("CordovaWebView css:'a[deal-desc=\"#{deal_name}\"]'")
        #need to add a wait for navigation here
     end
