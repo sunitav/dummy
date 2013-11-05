@@ -20,7 +20,7 @@ class HomePage < Calabash::ABase
   end
 
   def select_category(category_name)
-    simple_touch("CordovaWebView css:'a[category-desc=\"#{category_name}\"]> span")
+    touch("CordovaWebView css:'a[category-desc=\"#{category_name}\"]> span")
     #need to add a wait for navigation here
     wait_for_animation
   end

@@ -12,6 +12,9 @@ When(/^I login as default user$/)do
 end
 
 Then(/^I should be logged in$/) do
-  pending
+  if @page.is_a?(LoginPage)
+    screenshot_embed
+    raise "Was not logged in!"
+  end
 end
 

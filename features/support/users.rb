@@ -1,7 +1,7 @@
 USERS = {
     :default => {
         :email => "sushmav@thoughtworks.com",
-        :password => "password"
+        :password => "12345678"
     },
     :invalid => {
         :email => "alphamale@thpughtworks.com",

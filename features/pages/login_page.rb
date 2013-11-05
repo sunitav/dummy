@@ -9,8 +9,10 @@ class LoginPage < Calabash::ABase
   end
 
   def login(user)
-    performAction("set_text", "css", 'input#email', user[:email])
-    performAction("set_text", "css", 'input#password', user[:password])
+    touch("CordovaWebView css:'input#email'")
+    keyboard_enter_text(user[:email])
+    touch("CordovaWebView css:'input#password'")
+    keyboard_enter_text(user[:password])
     touch "CordovaWebView css:'button#signinButton>span'"
     wait_for_animation
   end
