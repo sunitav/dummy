@@ -1,10 +1,7 @@
-#require 'calabash-cucumber/operations'
-#require 'calabash-cucumber/core'
 require 'calabash-android/abase'
 
-class LoginPage < Calabash::ABase
-
-  def trait
+class LoginPage  < Calabash::ABase
+def trait
     "CordovaWebView css:'button#signinButton'"
   end
 
