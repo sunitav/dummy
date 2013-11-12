@@ -13,26 +13,24 @@ class HomePage < Calabash::IBase
   end
 
   def select_all_deals
-    touch("WebView css:'a[category-desc=\"All Deals\"]>span'")
+    touch("WebView css:'a[category-desc=\\\"All Deals\\\"]>span'")
     #need to add a wait for navigation here
     wait_for_animation
   end
 
   def select_category(category_name)
-    touch("WebView css:'a[category-desc=\"#{category_name}\"]>span'")
+    touch("WebView css:'a[category-desc=\\\"#{category_name}\\\"]>span'")
     #need to add a wait for navigation here
     wait_for_animation
   end
 
   def select_menubar
-    #wait_for_animation
     touch("WebView css:'span.icon-dashboard'")
     wait_for_animation
   end
 
   def select_signin
-    #touch("CordovaWebView css:'a#signInLink'")
-    touch("WebView css:'section.dashboard>ul>li:nth-child(4)>a'")
+    touch("WebView css:'a#signInLink'")
     wait_for_animation
   end
 

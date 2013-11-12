@@ -2,8 +2,7 @@ Given(/^I am logged in$/) do
   steps %Q{
     Given I am on the Sign In Page
     When I login as default user
-    Then I should be logged in
-  }
+    }
 end
 
 Given(/^I am on the Sign In Page$/) do
@@ -15,14 +14,10 @@ end
 When(/^I login as default user$/)do
   loginpage = page(LoginPage).await
   loginpage.login(USERS[:default])
-  wait_for_animation
 end
 
 Then(/^I should be logged in$/) do
-  #if @page.is_a?(LoginPage)
-  #  screenshot_embed
-  #  raise "Was not logged in!"
-  #end
-  #pass
+  homepage = page(HomePage).await
+  homepage.logged_in?
 end
 

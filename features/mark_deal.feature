@@ -7,4 +7,3 @@ Feature: : Mark Deal
     When I mark a "Cadbury Fabulous Fingers 110g" deal from the "Food Cupboard" category
     Then The deal is saved to my favourites
 
-
