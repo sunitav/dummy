@@ -7,14 +7,16 @@ class DealsPage < Calabash::IBase
   end
 
   def select_deal(deal_name)
-    touch("WebView css:'a[deal-desc=\"#{deal_name}\"]'")
+    touch("WebView css:'a[deal-desc=\\\"#{deal_name}\\\"]'")
+    wait_for_animation
   end
 
   def favorite_deal(deal_name)
-    touch("WebView css:'a[deal-desc=\"#{deal_name}\"]+a'")
+    touch("WebView css:'a[deal-desc=\\\"#{deal_name}\\\"]+a'")
+    wait_for_animation
   end
 
-  def deal_added_to_favourite?
-    element_exists("WebView css:'div.info-popup favourite'")
+  def deal_added_to_favourite? deal_name
+    query("WebView css:'ul[class=\\\"deals list\\\"]'")
   end
 end

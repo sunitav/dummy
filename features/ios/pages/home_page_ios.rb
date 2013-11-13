@@ -18,8 +18,8 @@ class HomePage < Calabash::IBase
 
   def select_category(category_name)
     scroll("WebView" ,:down)
+    #TODO Add method to scroll until we verify element is seen
     touch("WebView css:'a[category-desc=\\\"#{category_name}\\\"]>span'")
-    #need to add a wait for navigation here
     page(DealsPage).await
   end
 
@@ -30,8 +30,12 @@ class HomePage < Calabash::IBase
     end
   end
 
+  def home_link
+    "WebView css:'a[target=\\\"_self\\\"]'"
+  end
+
   def menu_visible?
-    element_exists("WebView css:'a[target=\\\"_self\\\"]'")
+    element_exists(home_link)
   end
 
   def toggle_menu
@@ -46,6 +50,19 @@ class HomePage < Calabash::IBase
   def click_register
     touch("WebView css:'a#registerLink'")
     page(LoginPage).await
+  end
+
+  def click_home
+    show_menu
+    touch(home_link)
+    wait_for_animation
+    page(HomePage).await
+  end
+
+  def click_my_favourites
+    show_menu
+    touch("WebView css:'a#myFavouritesLink'")
+    wait_for_animation
   end
 
   def logged_in?

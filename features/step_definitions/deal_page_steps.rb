@@ -3,6 +3,7 @@ When(/^I mark a "([^"]*)" deal from the "([^"]*)" category$/) do |deal_name, cat
   @homepage.select_category(category_name)
   @deal_page = page(DealsPage).await
   @deal_page.favorite_deal(deal_name)
+  @deal_name = deal_name
 end
 
 Then(/^The deal is added to My Favourite Deals$/) do
@@ -13,8 +14,14 @@ end
 
 
 Then(/^The deal is saved to my favourites$/) do
-  unless @deal_page.deal_added_to_favourite?
+  @homepage.click_my_favourites
+  favourite_deals_page = page(DealsPage).await
+  unless favourite_deals_page.deal_added_to_favourite?
     screenshot_embed(:label=>"Mark Deal")
     raise 'Deal was not added to Favourites'
   end
+end
+
+Then(/^I see the message "([^"]*)"$/) do |arg|
+
 end
