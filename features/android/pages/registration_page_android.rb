@@ -13,7 +13,6 @@ class RegistrationPage  < Calabash::ABase
     keyboard_enter_text(user[:password])
     touch "CordovaWebView css:'input#confirmPassword'"
     keyboard_enter_text(user[:confirm_password])
-    done
     touch "CordovaWebView css:'button#signupButton>span'"
     page(HomePage).await
   end

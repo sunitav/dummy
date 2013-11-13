@@ -3,7 +3,7 @@ require 'calabash-cucumber/ibase'
 class HomePage < Calabash::IBase
 
   def trait
-    "CordovaWebView css:'p.hero'"
+    "WebView css:'p.hero'"
   end
 
   def select_my_favorite_deals
@@ -17,13 +17,14 @@ class HomePage < Calabash::IBase
   end
 
   def select_category(category_name)
+    scroll("WebView" ,:down)
     touch("WebView css:'a[category-desc=\\\"#{category_name}\\\"]>span'")
     #need to add a wait for navigation here
     page(DealsPage).await
   end
 
   def show_menu
-    unless menu_visible
+    unless menu_visible?
       toggle_menu
       wait_for_animation
     end
@@ -49,7 +50,7 @@ class HomePage < Calabash::IBase
 
   def logged_in?
     show_menu
-    element_exists("CordovaWebView css:'a#logoutLink'")
+    element_exists("WebView css:'a#logoutLink'")
     toggle_menu
   end
 
