@@ -8,7 +8,6 @@ class DealsPage  < Calabash::ABase
 
   def select_deal(deal_name)
     touch("CordovaWebView css:'a[deal-desc=\"#{deal_name}\"]'")
-
   end
 
   def favorite_deal(deal_name)

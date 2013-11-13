@@ -1,5 +1,5 @@
 def wait_for_animation
-  sleep(0.6)
+  sleep(2)
 end
 
 def keyboard_enter_text (input)

@@ -7,6 +7,7 @@ Scenario:
   When I register with a valid email address and password
   Then I should see the registration message on the home page
 
+
 Scenario:
   Given I am on the registration page
   When I register an existing user

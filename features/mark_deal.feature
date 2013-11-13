@@ -5,5 +5,6 @@ Feature: : Mark Deal
   Scenario:
     Given I am logged in
     When I mark a "Cadbury Fabulous Fingers 110g" deal from the "Food Cupboard" category
-    Then The deal is saved to my favourites
+    Then I see the message "The deal has been added to your favourites"
+    And The deal is saved to my favourites
 

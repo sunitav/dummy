@@ -8,14 +8,13 @@ class LoginPage  < Calabash::IBase
 
   def login(user)
     touch("WebView css:'input#email'")
-    wait_for_animation
+    await_keyboard
     keyboard_enter_text(user[:email])
     touch("WebView css:'input#password'")
-    wait_for_animation
+    await_keyboard
     keyboard_enter_text(user[:password])
-    wait_for_animation
-    touch("WebView css:'button#signinButton>span'")
     done
-    wait_for(:timeout => 2) { element_exists("WebView css:'p.hero'") }
+    touch("WebView css:'button#signinButton>span'")
+    page(HomePage).await
   end
 end

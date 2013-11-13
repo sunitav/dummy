@@ -7,8 +7,8 @@ end
 
 Given(/^I am on the Sign In Page$/) do
   homepage = page(HomePage).await
-  homepage.select_menubar
-  homepage.select_signin
+  homepage.show_menu
+  homepage.click_signin
 end
 
 When(/^I login as default user$/)do

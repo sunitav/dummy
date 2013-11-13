@@ -7,24 +7,20 @@ class LoginPage  < Calabash::ABase
   end
 
   def login(user)
-    touch "CordovaWebView css:'input#email'"
+    touch email
     keyboard_enter_text(user[:email])
-    touch "CordovaWebView css:'input#password'"
+    touch password
     keyboard_enter_text(user[:password])
     touch "CordovaWebView css:'button#signinButton>span'"
-    wait_for(:timeout => 10) { element_exists("CordovaWebView css:'p.hero'") }
-    #wait_for(:timeout =>2) {element_exists(HomePage.page_load)}
+    page(HomePage).await
   end
 
-  def self.email
+  def email
     "CordovaWebView css:'input#email'"
   end
 
-  def self.password
+  def password
     "CordovaWebView css:'input#password'"
   end
 
-  def self.signin
-    "CordovaWebView css:'button#signinButton>span'"
-  end
 end

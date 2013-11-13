@@ -14,7 +14,7 @@ class DealsPage < Calabash::IBase
     touch("WebView css:'a[deal-desc=\"#{deal_name}\"]+a'")
   end
 
-  def deal_added_to_favourite
+  def deal_added_to_favourite?
     element_exists("WebView css:'div.info-popup favourite'")
   end
 end
