@@ -11,7 +11,8 @@ class DealsPage < Calabash::IBase
     wait_for_animation
   end
 
-  def favorite_deal(deal_name)
+  def favorite_a_deal(deal_name)
+    scroll("WebView" ,:down)
     touch("WebView css:'a[deal-desc=\\\"#{deal_name}\\\"]+a'")
     wait_for_animation
   end
@@ -19,4 +20,13 @@ class DealsPage < Calabash::IBase
   def deal_added_to_favourite? deal_name
     query("WebView css:'ul[class=\\\"deals list\\\"]'")
   end
-end
+
+  def is_deal_present?(deal_name)
+    element_exists("WebView css:'a[deal-desc=\"#{deal_name}\"]'")
+  end
+
+  def click_back_link
+    touch("WebView css:'.icon-back>span'")
+    wait_for_animation
+  end
+  end

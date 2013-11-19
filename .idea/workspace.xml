@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48fec0e3-4772-4ed2-b656-b68595b03cfe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/deal_page_steps.rb" afterPath="$PROJECT_DIR$/features/step_definitions/deal_page_steps.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/ios/pages/deals_page_ios.rb" afterPath="$PROJECT_DIR$/features/ios/pages/deals_page_ios.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/ios/pages/home_page_ios.rb" afterPath="$PROJECT_DIR$/features/ios/pages/home_page_ios.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/mark_deal.feature" afterPath="$PROJECT_DIR$/features/mark_deal.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/ios/pages/registration_page_ios.rb" afterPath="$PROJECT_DIR$/features/ios/pages/registration_page_ios.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dummy.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="48fec0e3-4772-4ed2-b656-b68595b03cfe" time="1384334310385" ignored="false" />
+    <file path="/Dummy.txt" changelist="48fec0e3-4772-4ed2-b656-b68595b03cfe" time="1384796587874" ignored="false" />
     <file path="/env.rb" changelist="48fec0e3-4772-4ed2-b656-b68595b03cfe" time="1383031035011" ignored="false" />
     <file path="/home_page_android.rb" changelist="48fec0e3-4772-4ed2-b656-b68595b03cfe" time="1383109144307" ignored="false" />
     <file path="/home_page.rb" changelist="48fec0e3-4772-4ed2-b656-b68595b03cfe" time="1383198902675" ignored="false" />
@@ -24,9 +24,10 @@
     <file path="$PROJECT_DIR$/../x-platform-example/features/android/pages/word_press_com_page_android.rb" changelist="48fec0e3-4772-4ed2-b656-b68595b03cfe" time="1383195780844" ignored="false" />
     <file path="/login_page_steps.rb" changelist="48fec0e3-4772-4ed2-b656-b68595b03cfe" time="1383198996673" ignored="false" />
     <file path="$PROJECT_DIR$/../../cooperative/toadlane/native/platforms/ios/dummy/features/ios/pages/registration_page_ios.rb" changelist="48fec0e3-4772-4ed2-b656-b68595b03cfe" time="1384335800816" ignored="false" />
-    <file path="/deals_page_ios.rb" changelist="48fec0e3-4772-4ed2-b656-b68595b03cfe" time="1384338499099" ignored="false" />
+    <file path="/deals_page_ios.rb" changelist="48fec0e3-4772-4ed2-b656-b68595b03cfe" time="1384797528212" ignored="false" />
     <file path="/home_page_ios.rb" changelist="48fec0e3-4772-4ed2-b656-b68595b03cfe" time="1384338018975" ignored="false" />
     <file path="/deal_page_steps.rb" changelist="48fec0e3-4772-4ed2-b656-b68595b03cfe" time="1384338177323" ignored="false" />
+    <file path="/registration_page_ios.rb" changelist="48fec0e3-4772-4ed2-b656-b68595b03cfe" time="1384873226491" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,46 +47,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="login_page_android.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/android/pages/login_page_android.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="26" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mark_deal.feature" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/mark_deal.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="36" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deal_page_steps.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/step_definitions/deal_page_steps.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="42" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deals_page_android.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/android/pages/deals_page_android.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="72" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="deals_page_ios.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/features/ios/pages/deals_page_ios.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="4" selection-start="424" selection-end="424" vertical-scroll-proportion="0.45166403">
+            <state line="17" column="33" selection-start="408" selection-end="408" vertical-scroll-proportion="0.38990825">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registration_page_ios.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/ios/pages/registration_page_ios.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="37" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -94,34 +68,7 @@
       <file leaf-file-name="home_page_ios.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/ios/pages/home_page_ios.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="45" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="env.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/support/env.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="1" selection-start="68" selection-end="101" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cucumber.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/cucumber.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login_page_ios.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/ios/pages/login_page_ios.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="70" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
+            <state line="19" column="29" selection-start="400" selection-end="424" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -145,7 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/features/android/helpers/utils_android.rb" />
         <option value="$PROJECT_DIR$/features/android/pages/deal_page_android.rb" />
         <option value="$PROJECT_DIR$/features/pages/deal_page.rb" />
         <option value="$PROJECT_DIR$/config/cucumber.yml" />
@@ -158,9 +104,10 @@
         <option value="$PROJECT_DIR$/features/android/pages/registration_page_android.rb" />
         <option value="$PROJECT_DIR$/features/android/support/app_installation_hooks.rb" />
         <option value="$PROJECT_DIR$/features/mark_deal.feature" />
-        <option value="$PROJECT_DIR$/features/ios/pages/home_page_ios.rb" />
         <option value="$PROJECT_DIR$/features/step_definitions/deal_page_steps.rb" />
+        <option value="$PROJECT_DIR$/features/ios/pages/home_page_ios.rb" />
         <option value="$PROJECT_DIR$/features/ios/pages/deals_page_ios.rb" />
+        <option value="$PROJECT_DIR$/features/ios/pages/registration_page_ios.rb" />
       </list>
     </option>
   </component>
@@ -313,46 +260,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="features" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dummy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dummy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="features" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dummy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dummy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -367,8 +274,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="fileColors" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../cooperative/toadlane" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -502,23 +409,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="779" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="779" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32844576" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25322813" sideWeight="0.5718475" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25681493" sideWeight="0.5718475" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25322813" sideWeight="0.42668623" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25681493" sideWeight="0.42668623" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -585,13 +492,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/features/unmark_deal.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="67" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/step_definitions/home_page_steps.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="15" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
@@ -606,20 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/android/pages/registration_page_android.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/android/pages/home_page_android.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/android/support/app_installation_hooks.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="27" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
@@ -629,70 +515,89 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/features/support/env.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="1" selection-start="68" selection-end="101" vertical-scroll-proportion="0.0">
+        <state line="2" column="1" selection-start="68" selection-end="101" vertical-scroll-proportion="0.04587156">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/cucumber.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
+        <state line="3" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.070202805">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/ios/pages/login_page_ios.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="70" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/android/pages/login_page_android.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="26" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/android/pages/deals_page_android.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="72" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0">
+        <state line="13" column="70" selection-start="304" selection-end="304" vertical-scroll-proportion="0.29816514">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/login.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/ios/pages/home_page_ios.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="45" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/mark_deal.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="36" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0">
+        <state line="7" column="36" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/step_definitions/deal_page_steps.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="42" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
+        <state line="18" column="42" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/android/pages/deals_page_android.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="49" selection-start="592" selection-end="592" vertical-scroll-proportion="0.5504587">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/android/pages/home_page_android.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="13" selection-start="1260" selection-end="1433" vertical-scroll-proportion="0.8165138">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/android/pages/login_page_android.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="26" selection-start="108" selection-end="108" vertical-scroll-proportion="0.1146789">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/android/pages/registration_page_android.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="440" selection-end="440" vertical-scroll-proportion="0.3440367">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/ios/pages/home_page_ios.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="29" selection-start="400" selection-end="424" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/ios/pages/registration_page_ios.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="37" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/ios/pages/deals_page_ios.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="4" selection-start="424" selection-end="424" vertical-scroll-proportion="0.45166403">
+        <state line="17" column="33" selection-start="408" selection-end="408" vertical-scroll-proportion="0.38990825">
           <folding />
         </state>
       </provider>

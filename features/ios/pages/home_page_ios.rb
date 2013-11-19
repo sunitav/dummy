@@ -6,7 +6,7 @@ class HomePage < Calabash::IBase
     "WebView css:'p.hero'"
   end
 
-  def select_my_favorite_deals
+  def select_category_my_favorite_deals
     touch("WebView css:'a.my-favourite-deals'")
     page(DealsPage).await
   end
@@ -59,7 +59,7 @@ class HomePage < Calabash::IBase
     page(HomePage).await
   end
 
-  def click_my_favourites
+  def click_link_my_favourite_deals
     show_menu
     touch("WebView css:'a#myFavouritesLink'")
     wait_for_animation
@@ -69,6 +69,11 @@ class HomePage < Calabash::IBase
     show_menu
     element_exists("WebView css:'a#logoutLink'")
     toggle_menu
+  end
+
+  def Is_MyFavourite_Count_EqualTo?(count)
+    q = query("WebView css:'.my-favourite-deals span[class=\"count ng-binding\"]'")
+    q[0]["textContent"].eql?(count)
   end
 
 end

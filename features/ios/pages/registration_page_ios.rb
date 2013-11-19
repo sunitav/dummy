@@ -1,6 +1,6 @@
-require 'calabash-android/abase'
+require 'calabash-cucumber/ibase'
 
-class RegistrationPage  < Calabash::ABase
+class RegistrationPage  < Calabash::IBase
 
   def trait
     "CordovaWebView css:'button#signinButton'"
