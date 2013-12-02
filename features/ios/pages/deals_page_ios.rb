@@ -29,4 +29,14 @@ class DealsPage < Calabash::IBase
     touch("WebView css:'.icon-back>span'")
     wait_for_animation
   end
+
+  def is_text_present?(msg)
+    q = query("WebView css:'.listview-item.no-deals'")
+    q[0]["textContent"].strip.eql?(msg)
+  end
+
+  def unfavourite_a_deal(deal_name)
+    touch("WebView css:'a[deal-desc=\"#{deal_name}\"]+a'")
+  end
+
   end

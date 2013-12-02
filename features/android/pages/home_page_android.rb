@@ -3,22 +3,7 @@ require 'calabash-android/abase'
 class HomePage < Calabash::ABase
 
   def trait
-    "CordovaWebView css:'p.hero'"
-  end
-
-  def select_category_my_favorite_deals
-    touch("CordovaWebView css:'a.my-favourite-deals'")
-    page(DealsPage).await
-  end
-
-  def select_all_deals
-    touch("CordovaWebView css:'a[category-desc=\"All Deals\"]>span'")
-    page(DealsPage).await
-  end
-
-  def select_category(category_name)
-    touch("CordovaWebView css:'a[category-desc=\"#{category_name}\"]>span'")
-    page(DealsPage).await
+    "CordovaWebView css:'#carousel'"
   end
 
   def show_menu
@@ -37,7 +22,7 @@ class HomePage < Calabash::ABase
   end
 
   def click_signin
-    touch "CordovaWebView css:'section.dashboard>ul>li:nth-child(4)>a'"
+    touch "CordovaWebView css:'section.dashboard>ul>li:nth-child(5)>a'"
     wait_for_animation
     page(LoginPage).await
   end
@@ -54,13 +39,12 @@ class HomePage < Calabash::ABase
 
   def click_link_my_favourite_deals
     show_menu
-    touch("WebView css:'a#myFavouritesLink'")
+    touch("CordovaWebView css:'a#myFavouritesLink'")
     wait_for_animation
   end
 
-  def Is_MyFavourite_Count_EqualTo?(count)
-    q = query("CordovaWebView css:'.my-favourite-deals span[class=\"count ng-binding\"]'")
-    q[0]["textContent"].eql?(count)
+  def navigateToCategoriesPage
+    touch("CordovaWebView xpath:'//div[@class=\"home-deals\"]//li[contains(text(), \"By Category\")]'")
   end
 
 end

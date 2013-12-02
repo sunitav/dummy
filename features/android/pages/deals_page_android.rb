@@ -19,11 +19,20 @@ class DealsPage  < Calabash::ABase
   end
 
   def is_deal_present?(deal_name)
-    element_exists("CordovaWebView css:'a[deal-desc=\"#{deal_name}\"]'")
+    q=element_exists("CordovaWebView css:'a[deal-desc=\"#{deal_name}\"]'")
+  end
+
+  def is_text_present?(msg)
+    q = query("CordovaWebView css:'.listview-item.no-deals'")
+    q[0]["textContent"].strip.eql?(msg)
   end
 
   def click_back_link
     touch("CordovaWebView css:'.icon-back>span'")
     wait_for_animation
+  end
+
+  def unfavourite_a_deal(deal_name)
+    touch("CordovaWebView css:'a[deal-desc=\"#{deal_name}\"]+a'")
   end
 end

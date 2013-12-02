@@ -3,24 +3,7 @@ require 'calabash-cucumber/ibase'
 class HomePage < Calabash::IBase
 
   def trait
-    "WebView css:'p.hero'"
-  end
-
-  def select_category_my_favorite_deals
-    touch("WebView css:'a.my-favourite-deals'")
-    page(DealsPage).await
-  end
-
-  def select_all_deals
-    touch("WebView css:'a[category-desc=\\\"All Deals\\\"]>span'")
-    page(DealsPage).await
-  end
-
-  def select_category(category_name)
-    scroll("WebView" ,:down)
-    #TODO Add method to scroll until we verify element is seen
-    touch("WebView css:'a[category-desc=\\\"#{category_name}\\\"]>span'")
-    page(DealsPage).await
+    "WebView css:'#carousel'"
   end
 
   def show_menu
@@ -71,9 +54,8 @@ class HomePage < Calabash::IBase
     toggle_menu
   end
 
-  def Is_MyFavourite_Count_EqualTo?(count)
-    q = query("WebView css:'.my-favourite-deals span[class=\"count ng-binding\"]'")
-    q[0]["textContent"].eql?(count)
+  def navigateToCategoriesPage
+    touch("WebView xpath:'//div[@class=\"home-deals\"]//li[contains(text(), \"By Category\")]'")
   end
 
 end
