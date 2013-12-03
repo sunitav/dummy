@@ -1,13 +1,13 @@
-require 'calabash-android/abase'
+require 'calabash-cucumber/ibase'
 
-class Categories < Calabash::ABase
+class Categories < Calabash::IBase
 
   def trait
-    query("CordovaWebView css:'h1[ng-bind=\"pageTitle\"]'")
+   "WebView css:'h1[ng-bind=\"pageTitle\"]'"
   end
 
   def select_category(category_name)
-    touch("WebView css:'a[category-desc=\"#{category_name}\"]>span'")
+    touch("WebView css:'a[category-desc=\\\"#{category_name}\\\"]>span'")
     page(DealsPage).await
   end
 

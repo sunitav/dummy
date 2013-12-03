@@ -55,7 +55,7 @@ class HomePage < Calabash::IBase
   end
 
   def navigateToCategoriesPage
-    touch("WebView xpath:'//div[@class=\"home-deals\"]//li[contains(text(), \"By Category\")]'")
+    touch("WebView xpath:'//div[@class=\\\"home-deals\\\"]//li[contains(text(), \\\"By Category\\\")]'")
   end
 
 end

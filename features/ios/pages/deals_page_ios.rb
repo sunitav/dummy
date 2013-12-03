@@ -22,7 +22,7 @@ class DealsPage < Calabash::IBase
   end
 
   def is_deal_present?(deal_name)
-    element_exists("WebView css:'a[deal-desc=\"#{deal_name}\"]'")
+    element_exists("WebView css:'a[deal-desc=\\\"#{deal_name}\\\"]'")
   end
 
   def click_back_link
@@ -36,7 +36,8 @@ class DealsPage < Calabash::IBase
   end
 
   def unfavourite_a_deal(deal_name)
-    touch("WebView css:'a[deal-desc=\"#{deal_name}\"]+a'")
+    touch("WebView css:'a[deal-desc=\\\"#{deal_name}\\\"]+a'")
+    wait_for_animation
   end
 
   end
